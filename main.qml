@@ -118,17 +118,19 @@ Component {
         	height: 300
         	border.color : "Black"
 			border.width : 2
+			anchors.verticalCenter : parent.verticalCenter
 			anchors.horizontalCenter : parent.horizontalCenter
         }
 		
 		Flickable {
 			id: flickable1
+			anchors.verticalCenter : parent.verticalCenter
         	anchors.horizontalCenter : parent.horizontalCenter
 			clip: true
         	height: 300
         	width: 300
-        	contentWidth: parent.width
-        	contentHeight:parent.height  
+        	contentWidth: 300
+        	contentHeight:300  
         	
         	Text {
         		id: qrcodeTxt
@@ -156,6 +158,7 @@ Component {
 		}
 	}
 }
+
 
 }
 
